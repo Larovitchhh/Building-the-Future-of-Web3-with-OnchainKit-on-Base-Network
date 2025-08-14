@@ -1,0 +1,2 @@
+The <Transaction /> component simplifies the transaction lifecycle, handling gas estimation, fee sponsorship, and status updates. It’s ideal for use cases like token transfers or contract interactions.
+
