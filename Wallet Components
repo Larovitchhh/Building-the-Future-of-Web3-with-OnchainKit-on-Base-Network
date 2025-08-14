@@ -1,0 +1,26 @@
+The <Wallet /> component enables users to connect their Smart Wallets and display identity information, such as Basenames, avatars, and ETH balances. For example:tsx
+
+import { Wallet, ConnectWallet, WalletDropdown, WalletDropdownDisconnect, Identity, Avatar, Name, Address, EthBalance } from '@coinbase/onchainkit';
+
+export default function Home() {
+  return (
+    <Wallet>
+      <ConnectWallet>
+        <Avatar className="h-6 w-6" />
+        <Name />
+      </ConnectWallet>
+      <WalletDropdown>
+        <Identity className="px-4 pt-3 pb-2" hasCopyAddressOnClick>
+          <Avatar />
+          <Name />
+          <Address />
+          <EthBalance />
+        </Identity>
+        <WalletDropdownDisconnect />
+      </WalletDropdown>
+    </Wallet>
+  );
+}
+
+This code creates a wallet connection interface that allows users to sign in with their email, create a wallet, and perform Web3 actions without needing MetaMask.
+
