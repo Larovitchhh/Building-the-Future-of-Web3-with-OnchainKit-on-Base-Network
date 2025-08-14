@@ -1,0 +1,32 @@
+For projects with custom appchains, the <AppchainBridge /> component enables seamless fund transfers between Base and your appchain. This is particularly useful for mature projects scaling with dedicated blockspace. For example, you can configure a bridge for the Blocklords Appchain:tsx
+
+import { AppchainBridge, Appchain, BridgeableToken } from '@coinbase/onchainkit';
+import { base } from 'viem/chains';
+import { LordsChain } from '../chain';
+
+export default function Bridge() {
+  const appchain: Appchain = {
+    chain: LordsChain,
+    icon: <img src="https://img.cryptorank.io/coins/blocklords1670492311588.png" alt="LRDS" />,
+  };
+
+  const bridgeableTokens: BridgeableToken[] = [
+    {
+      address: '0xB676f87A6E701f0DE8De5Ab91B56b66109766DB1',
+      remoteToken: '0x4200000000000000000000000000000000000006',
+      name: 'Blocklords',
+      symbol: 'LRDS',
+      decimals: 18,
+      chainId: LordsChain.id,
+      image: 'https://img.cryptorank.io/coins/blocklords1670492311588.png',
+      isCustomGasToken: true,
+    },
+  ];
+
+  return (
+    <AppchainBridge chain={base} appchain={appchain} bridgeableTokens={bridgeableTokens} />
+  );
+}
+
+This code creates a dedicated bridge page for users to move funds between Base and the Blocklords Appchain.
+
