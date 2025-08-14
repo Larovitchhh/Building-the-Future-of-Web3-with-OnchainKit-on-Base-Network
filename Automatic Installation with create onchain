@@ -1,0 +1,21 @@
+For developers starting a new project, OnchainKit provides a streamlined setup process using the npm create onchain command. This command bootstraps a new onchain app with all necessary dependencies and pre-configured templates, saving weeks of setup time. To create a project, run:bash
+
+npm create onchain@latest
+
+This command prompts you to enter a project name and your Coinbase Developer Platform (CDP) Client API Key. Once completed, it generates a project folder with the following out-of-the-box features:Next.js v14 with App routing for modern web development.
+Ethereum L2 Support through Base, ensuring low-cost transactions.
+Smart Wallet Integration for easy account creation and gasless transactions.
+Tailwind CSS for modern styling best practices.
+Linting, Formatting, and Tests for easy maintenance.
+
+Pre-built templates are also available for specific use cases, such as:Onchain Commerce
+NFT Minting
+Funding Flows
+Social Profiles
+
+After setup, navigate to your project directory, install dependencies, and run the development server:bash
+
+cd your-project-name
+npm install
+npm run dev
+
