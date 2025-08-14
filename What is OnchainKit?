@@ -1,0 +1,4 @@
+OnchainKit is a comprehensive software development kit (SDK) designed to streamline the creation of onchain applications on the Base blockchain. It provides ready-to-use, full-stack React components and TypeScript utilities that allow developers to build beautiful and functional dApps in minutes, not weeks. Whether you're a seasoned blockchain engineer or a newcomer to Web3, OnchainKit eliminates the complexity of onchain interactions, making it accessible to developers of all skill levels.
+
+OnchainKit is deeply integrated with Base, an Ethereum L2 solution optimized for scalability, low transaction costs, and developer productivity. By leveraging Base’s infrastructure, OnchainKit enables developers to create applications that are fast, cost-effective, and capable of onboarding millions of users to the blockchain.
+
