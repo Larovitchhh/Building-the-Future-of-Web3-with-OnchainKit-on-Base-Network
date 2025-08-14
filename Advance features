@@ -1,0 +1,18 @@
+Appchain SupportOnchainKit supports custom appchains, enabling developers to create dedicated blockspace for their projects. By using Viem’s defineChain function and extending Wagmi configurations, developers can integrate appchains like Blocklords into their apps. This is particularly useful for projects requiring custom gas tokens or full control over their infrastructure.
+
+Smart Wallet IntegrationOnchainKit’s Smart Wallet support allows users to create wallets using their email, enabling gasless transactions and a MetaMask-free experience. This lowers the barrier to entry for non-crypto-native users, making it easier to onboard the next billion users to Web3.
+
+MiniKit and AgentKitIn addition to OnchainKit, Base offers complementary tools like MiniKit for building mini apps and AgentKit for advanced automation. These tools further expand the Base ecosystem, providing developers with a comprehensive suite for creating innovative dApps.
+
+Community and Open-Source ContributionsOnchainKit is an open-source project hosted on GitHub, with a vibrant community of contributors. Developers can fork the repository, contribute to its development, or explore community-driven projects at https://github.com/coinbase/onchainkit. The project is licensed under the MIT License, encouraging collaboration and innovation.
+
+Why Build with OnchainKit on Base?Building on Base with OnchainKit offers several advantages:Scalability: Base’s Ethereum L2 infrastructure ensures low-cost transactions and high throughput.
+User-Friendly: OnchainKit’s components simplify complex blockchain interactions, making dApps accessible to all users.
+Rapid Development: Pre-built templates and components reduce development time, allowing developers to focus on innovation.
+Ecosystem Support: Base provides extensive documentation, a supportive Discord community, and resources like BaseScan and engineering blogs.
+
+Real-World Use CasesOnchainKit is versatile and supports a wide range of applications, including:Onchain Commerce: Build marketplaces for digital goods or services with the <Checkout /> component.
+NFT Platforms: Create platforms for minting and trading NFTs using the <Mint /> component.
+Social dApps: Develop social profiles with identity components for Basenames and avatars.
+Gaming: Integrate appchains and bridge components for blockchain-based games with custom gas tokens.
+
