@@ -1,0 +1,27 @@
+If you’re integrating OnchainKit into an existing project, you can manually install it using the following steps:Install OnchainKit:bash
+
+npm install @coinbase/onchainkit
+
+Obtain a Client API Key: Visit the Coinbase Developer Platform to get your Client API Key and add it to a .env file in your project root:env
+
+NEXT_PUBLIC_ONCHAINKIT_API_KEY=YOUR_CLIENT_API_KEY
+
+Set Up Providers: Create a providers.tsx file to configure the OnchainKitProvider with your API key and desired blockchain (e.g., Base). For example:tsx
+
+import { OnchainKitProvider } from '@coinbase/onchainkit';
+import { base } from 'wagmi/chains';
+import type { ReactNode } from 'react';
+
+export function Providers({ children }: { children: ReactNode }) {
+  return (
+    <OnchainKitProvider apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY} chain={base}>
+      {children}
+    </OnchainKitProvider>
+  );
+}
+
+Wrap Your App: Wrap your application with the Providers component in your root layout file (e.g., app/layout.tsx).
+Add Styles: Import OnchainKit’s pre-configured styles by adding the following line to your layout file:tsx
+
+import '@coinbase/onchainkit/styles.css';
+
